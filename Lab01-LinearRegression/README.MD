@@ -16,6 +16,8 @@ MSE Loss 는 Logisitic(=Sigmoid) function 에 대해 Non-Convex 하다.
 python visualize_logistic_regression.py
 ```
 
+<img src="figures/logistic_regression_dataset.PNG" width="50%">
+
 <img src="figures/logistic_regression_mse.PNG" width="50%">
 
 <img src="figures/logistic_regression_bce.PNG" width="50%">
