@@ -17,7 +17,6 @@ def file_read(path):
         return X, Y
 
 
-
 X, Y = file_read("train.txt")
 
 a_students = Y[...]==1
