@@ -16,18 +16,18 @@ def file_read(path):
 
         return X, Y
 
-def scatter(x, y, c):
-    for xi, yi in zip(x,y):
-        plt.scatter(xi, yi, color=c)
+
 
 X, Y = file_read("train.txt")
 
-b_students = Y[...]==1
-a_students = Y[...]==0
+a_students = Y[...]==1
+b_students = Y[...]==0
 
-scatter(X[a_students], Y[a_students], 'b')
-scatter(X[b_students], Y[b_students], 'r')
+plt.scatter(X[a_students], Y[a_students], color='r', label='A')
+plt.scatter(X[b_students], Y[b_students], color='b', label='B')
 
 plt.xlabel("Point")
 plt.ylabel("Grade(A:1, B:0)")
+plt.legend()
+
 plt.show()
