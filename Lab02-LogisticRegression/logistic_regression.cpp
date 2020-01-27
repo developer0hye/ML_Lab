@@ -35,7 +35,7 @@ public:
 
     LogisticRegression() :m(0.1), c(0.1), lr(0.0001) {}
 
-    double predict(double x) //Y= mX+c
+    double predict(double x)
     {
         double gx = m*x + c;
         double fx = 1./(exp(-gx)+1.);
