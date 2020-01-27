@@ -61,8 +61,8 @@ public:
             //여기다 코드 작성
             
         }
-        dm /= n; //2 안곱함
-        dc /= n; //2 안곱함
+        dm /= n;
+        dc /= n;
 
         m = m - lr * dm;
         c = c - lr * dc;
@@ -77,7 +77,7 @@ public:
         for (int i = 0; i < x.size(); i++)
         {
             double fx = this->predict(x[i]);
-            double cost = target_y[i]*log(fx+1e-6) + (1-target_y[i])*log( (1.-fx)+1e-6);
+            double cost = target_y[i]*log(fx+1e-6) + (1-target_y[i])*log((1.-fx)+1e-6);
             sum_cost += -cost;
         }
         return sum_cost / (double)(x.size());
